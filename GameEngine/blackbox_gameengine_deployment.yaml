@@ -66,8 +66,8 @@ spec:
             value: "Server=tcp:game-sqlserver-cac168.database.windows.net,1433;Initial Catalog=gamedb;Persist Security Info=False;User ID=gamedbadministrator;Password=8aBqPYfgZg8Vp0NO;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
           - name: "ARCADE_BACKENDURL"
             value: "http://gamebot/pick"
-#          - name: "APPINSIGHTS_INSTRUMENTATIONKEY"
-#            value: "00000000-0000-0000-0000-000000000000"            
+          - name: "APPINSIGHTS_INSTRUMENTATIONKEY"
+            value: "eeabce66-19d4-4d9f-8f13-3cf96e9adc8e"            
       - name: istio-proxy
         image: ghcr.io/azure-adventure-day/azure-adventure-day-coach/gamedayengine-sidecar:latest
         imagePullPolicy: Always
