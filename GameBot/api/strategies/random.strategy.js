@@ -6,7 +6,7 @@ class RandomStrategy {
     pick() {
         const choiceIndex = Math.floor((Math.random() * RPSLSChoices.length - 1) + 1);
 
-        var bet = null;
+        var bet = 1;
         if (process.env.FF_BETS) {
             // The bet of Humans that they will win
             // value of 1 means if Humans win, they will get 2x of the score - if they loose they loose 2x of the score
