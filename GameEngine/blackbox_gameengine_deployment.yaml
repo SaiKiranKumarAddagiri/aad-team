@@ -38,7 +38,9 @@ kind: Deployment
 metadata:
   name: blackboxgameengine
 spec:
-  replicas: 1
+  maxReplicas: 10
+  minReplicas: 3
+  targetCPUUtilizationPercentage: 50
   selector:
     matchLabels:
       name: blackboxgameengine      
